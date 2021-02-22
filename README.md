@@ -36,7 +36,7 @@ Proyecto:
 
 Ir al Path firebase/firebase-config.js
 
-Copiar SDK del proyecto
+Copiar SDK del proyecto<br>
 Ejemplo:
 
 ```
