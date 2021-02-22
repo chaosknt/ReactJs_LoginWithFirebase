@@ -34,8 +34,8 @@ Firestore:
 
 Proyecto:
 
-Ir al Path firebase/firebase-config.js
-
+En el proyecto irr al Path firebase/firebase-config.js
+<br>
 Copiar SDK del proyecto<br>
 Ejemplo:
 
