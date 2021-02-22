@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# About this Proyect
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Plantilla para proyecto que utilice Login y registro de firebase, tiene configuradas las librerias de Bootstrap 4 y de FontAwesome.
 
-## Available Scripts
+<ul>
+  <li>Formulario de login y registro usando Firebase. </li>
+  <li>Rutas publicas y privadas. </li>
+  <li>Store y Redux </li>
+ </ul>
 
-In the project directory, you can run:
 
-### `npm start`
+# Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Librerias necesarias para el proyecto:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm install node-sass`
+### `npm install react-redux`
+### `npm install --save redux-thunk`
+### `npm i validator`
+### `npm install sweetalert2`
+### `npm install --save firebase`
 
-### `npm test`
+# Configuration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Firestore:
 
-### `npm run build`
+1.- Crear proyecto en Firebase<br><br>
+    a.- https://console.firebase.google.com/u/0/<br>
+    b.- Agregar proyecto --> Crear el proyecto.<br><br>
+2.- Configurar Proyecto.<br><br>
+    a.- Dentro del proyecto en el menu lateral ir a authentication.<br>
+    b.- Dentro de authentication ir a la pestaña de Sign-in method y habilitar correo electronico y Google.<br><br>
+3.- Copiar SDK<br><br>
+    a.- ir a configuracion (arriba a la izquierda, ruedita al lado de descripcion general) --> configuracion del proyecto.<br>
+    b.- Ir abajo de todo y seleccionar app web ( </> ). <br>
+    c.- Seguir los pasos para registrar la APP, al terminar se nos va crear el SDK para importar al proyecto.<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Proyecto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+En el proyecto ir al Path firebase/firebase-config.js
+<br>
+Copiar SDK del proyecto<br>
+Ejemplo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+   const firebaseConfig = {
+    apiKey: "AIzaSyBJcrS2Gccwzm6YSbtprRUVywu8ZfrbQxg",
+    authDomain: "cool-citadel-272000.firebaseapp.com",
+    projectId: "cool-citadel-272000",
+    storageBucket: "cool-citadel-272000.appspot.com",
+    messagingSenderId: "107117953803",
+    appId: "1:107117953803:web:1833f9637937266878980e"
+  };
+```
 
-### `npm run eject`
+# Routes
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Configurar en el AppRouter las rutas que se van creando y que se quieren mostrar, tanto para las rutas publicas como para las privadas la configuracion es la misma:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+ <PrivateRoute exact path='/' isAuthenticated ={ isLoggedIn } component = { MainScreen } />
+```
+* path: Url para acceder al componente.<br>
+* isAuthenticated ={ isLoggedIn }: Propiedad necesaria para usar el componente, valida si se muestra dicho componente si el usuario esta logueado. <br>
+* component = { MainScreen }: Componente que se desea mostrar.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
