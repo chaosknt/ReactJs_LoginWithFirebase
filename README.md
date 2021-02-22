@@ -23,14 +23,14 @@ Firestore:
 
 1.- Crear proyecto en Firebase<br><br>
     a.- https://console.firebase.google.com/u/0/<br>
-    b.- Agregar proyecto --> Crear el proyecto<br><br>
-2.- Configurar Proyecto<br><br>
-    a.- Dentro del proyecto en el menu lateral ir a authentication<br>
-    b.- Dentro de authentication ir a la pestaña de Sign-in method y habilitar correo electronico y Google<br><br>
+    b.- Agregar proyecto --> Crear el proyecto.<br><br>
+2.- Configurar Proyecto.<br><br>
+    a.- Dentro del proyecto en el menu lateral ir a authentication.<br>
+    b.- Dentro de authentication ir a la pestaña de Sign-in method y habilitar correo electronico y Google.<br><br>
 3.- Copiar SDK<br><br>
-    a.- ir a configuracion (arriba a la izquierda, ruedita al lado de descripcion general) --> configuracion del proyecto<br>
-    b.- Ir abajo de todo y seleccionar app web ( </> ) <br>
-    c.- Seguir los pasos para registrar la APP, al terminar se nos va crear el SDK para importar al proyecto<br>
+    a.- ir a configuracion (arriba a la izquierda, ruedita al lado de descripcion general) --> configuracion del proyecto.<br>
+    b.- Ir abajo de todo y seleccionar app web ( </> ). <br>
+    c.- Seguir los pasos para registrar la APP, al terminar se nos va crear el SDK para importar al proyecto.<br>
 
 Proyecto:
 
@@ -57,9 +57,9 @@ Configurar en el AppRouter las rutas que se van creando y que se quieren mostrar
 ```
  <PrivateRoute exact path='/' isAuthenticated ={ isLoggedIn } component = { MainScreen } />
 ```
-* path: Url para acceder al componente<br>
-* isAuthenticated ={ isLoggedIn }: Propiedad necesaria para usar el componente, valida si se muestra dicho componente si el usuario esta logueado <br>
-* component = { MainScreen }: Componente a mostrar. En este ejemplo el AuthRouter
+* path: Url para acceder al componente.<br>
+* isAuthenticated ={ isLoggedIn }: Propiedad necesaria para usar el componente, valida si se muestra dicho componente si el usuario esta logueado. <br>
+* component = { MainScreen }: Componente que se desea mostrar.
 
 
 
