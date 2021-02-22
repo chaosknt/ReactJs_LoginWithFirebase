@@ -21,13 +21,13 @@ Librerias necesarias para el proyecto:
 
 Firestore:
 
-1.- Crear proyecto en Firebase<br>
+1.- Crear proyecto en Firebase<br><br>
     a.- https://console.firebase.google.com/u/0/<br>
-    b.- Agregar proyecto --> Crear el proyecto<br>
-2.- Configurar Proyecto<br>
+    b.- Agregar proyecto --> Crear el proyecto<br><br>
+2.- Configurar Proyecto<br><br>
     a.- Dentro del proyecto en el menu lateral ir a authentication<br>
-    b.- Dentro de authentication ir a la pestaña de Sign-in method y habilitar correo electronico y Google<br>
-3.- Copiar SDK<br>
+    b.- Dentro de authentication ir a la pestaña de Sign-in method y habilitar correo electronico y Google<br><br>
+3.- Copiar SDK<br><br>
     a.- ir a configuracion (arriba a la izquierda, ruedita al lado de descripcion general) --> configuracion del proyecto<br>
     b.- Ir abajo de todo y seleccionar app web ( </> ) <br>
     c.- Seguir los pasos para registrar la APP, al terminar se nos va crear el SDK para importar al proyecto<br>
