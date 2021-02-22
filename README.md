@@ -1,12 +1,22 @@
-# Getting Started with Create React App
+# About
+
+Formulario de login y registro usando Firebase. 
+
+
+# Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+Librerias Instaladas
 
-### `npm start`
+### `npm install node-sass`
+### `npm install react-redux`
+### `npm install --save redux-thunk`
+### `npm i validator`
+### `npm install sweetalert2`
+### `npm install --save firebase`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
