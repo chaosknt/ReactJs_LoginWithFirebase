@@ -50,4 +50,18 @@ Ejemplo:
   };
 ```
 
+# Routes
+
+Configurar en el AppRouter las rutas que se van creando, tanto para las rutas publicas como para las privadas:
+
+```
+  <PublicRoute path='/auth' isAuthenticated ={ isLoggedIn } component = { AuthRouter } />
+```
+path: Url para acceder al componente<br>
+isAuthenticated ={ isLoggedIn }: Propiedad necesaria para usar el componente, valida si se muestra dicho componente si el usuario esta logueado <br>
+component = { AuthRouter }: Componente a mostrar.
+
+
+
+
 
