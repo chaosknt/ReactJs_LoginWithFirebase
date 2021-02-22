@@ -1,15 +1,14 @@
 # About
 
-Formulario de login y registro usando Firebase. 
+<ul>
+  <li>Formulario de login y registro usando Firebase. </li>
+  <li>Rutas publicas y privadas. </li>
+ </ul>
 
 
 # Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-Librerias Instaladas
+Librerias necesarias para el proyecto:
 
 ### `npm install node-sass`
 ### `npm install react-redux`
@@ -18,8 +17,38 @@ Librerias Instaladas
 ### `npm install sweetalert2`
 ### `npm install --save firebase`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Configuration
+
+Firestore:
+
+1.- Crear proyecto en Firebase
+    a.- https://console.firebase.google.com/u/0/
+    b.- Agregar proyecto --> Crear el proyecto
+2.- Configurar Proyecto
+    a.- Dentro del proyecto en el menu lateral ir a authentication
+    b.- Dentro de authentication ir a la pestaña de Sign-in method y habilitar correo electronico y Google
+3.- Copiar SDK
+    a.- ir a configuracion (arriba a la izquierda, ruedita al lado de descripcion general) --> configuracion del proyecto
+    b.- Ir abajo de todo y seleccionar app web ( </> )
+    c.- Seguir los pasos para registrar la APP, al terminar se nos va crear el SDK para importar al proyecto
+
+Proyecto:
+
+Ir al Path firebase/firebase-config.js
+
+Copiar SDK del proyecto
+
+```
+   const firebaseConfig = {
+    apiKey: "AIzaSyBJcrS2Gccwzm6YSbtprRUVywu8ZfrbQxg",
+    authDomain: "cool-citadel-272000.firebaseapp.com",
+    projectId: "cool-citadel-272000",
+    storageBucket: "cool-citadel-272000.appspot.com",
+    messagingSenderId: "107117953803",
+    appId: "1:107117953803:web:1833f9637937266878980e"
+  };
+```
+
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
