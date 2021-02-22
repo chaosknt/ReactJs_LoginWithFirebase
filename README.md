@@ -1,4 +1,4 @@
-# About this Proyect
+# About
 
 Plantilla para proyecto que utilice Login y registro de firebase.
 
