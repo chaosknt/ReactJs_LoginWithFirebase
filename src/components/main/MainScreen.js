@@ -13,7 +13,7 @@ const MainScreen = () => {
 
     return (
         <div>
-            <h1>Main Screen</h1>
+            <h1>Main Screen </h1>
             <hr />
             <button className="btn btn-primary" onClick={ handleLogout }>
                   Logout
