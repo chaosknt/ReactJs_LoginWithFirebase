@@ -57,9 +57,9 @@ Configurar en el AppRouter las rutas que se van creando y que se quieren mostrar
 ```
  <PrivateRoute exact path='/' isAuthenticated ={ isLoggedIn } component = { MainScreen } />
 ```
-*path: Url para acceder al componente<br>
-*isAuthenticated ={ isLoggedIn }: Propiedad necesaria para usar el componente, valida si se muestra dicho componente si el usuario esta logueado <br>
-*component = { MainScreen }: Componente a mostrar. En este ejemplo el AuthRouter
+* path: Url para acceder al componente<br>
+* isAuthenticated ={ isLoggedIn }: Propiedad necesaria para usar el componente, valida si se muestra dicho componente si el usuario esta logueado <br>
+* component = { MainScreen }: Componente a mostrar. En este ejemplo el AuthRouter
 
 
 
