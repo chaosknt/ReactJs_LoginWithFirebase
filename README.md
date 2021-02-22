@@ -1,7 +1,17 @@
 # About this Proyect
 
-Plantilla para proyecto que utilice Login y registro de firebase, tiene configuradas las librerias de Bootstrap 4 y de FontAwesome.
+Plantilla para proyecto que utilice Login y registro de firebase.
 
+Librerias: <br>
+
+<ul>
+  <li>Bootstrap 4.</li>
+  <li>FontAwesome.</li>
+  
+ </ul>
+ 
+ <hr>
+ 
 <ul>
   <li>Formulario de login y registro usando Firebase. </li>
   <li>Rutas publicas y privadas. </li>
