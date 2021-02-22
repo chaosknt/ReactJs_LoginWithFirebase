@@ -2,6 +2,14 @@
 
 Plantilla para proyecto que utilice Login y registro de firebase.
 
+<ul>
+  <li>Formulario de login y registro usando Firebase. </li>
+  <li>Rutas publicas y privadas. </li>
+  <li>Store y Redux </li>
+ </ul>
+ 
+  <hr>
+ 
 Librerias: <br>
 
 <ul>
@@ -10,13 +18,9 @@ Librerias: <br>
   
  </ul>
  
- <hr>
+
  
-<ul>
-  <li>Formulario de login y registro usando Firebase. </li>
-  <li>Rutas publicas y privadas. </li>
-  <li>Store y Redux </li>
- </ul>
+
 
 
 # Getting Started
